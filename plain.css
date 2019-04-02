@@ -12,15 +12,19 @@ div[plain]{
  height:100vh;
  overflow-y:auto;
 }
+nav[plain]:hover {
+    right: 0.15rem;
+}
 nav[plain] {
     position: fixed;
     top: 0.5rem;
-    left: 0.5rem;
+    right: -2.15rem;
     z-index: 10;
     justify-content: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: right 0.1s linear;
 }
 nav[plain] label{
  display:block;
