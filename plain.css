@@ -1,0 +1,45 @@
+section[plain],body{
+ background-color:#222222;
+ color:#009988;
+ overflow: hidden;
+ margin:0;padding:0;
+ font-family: 'Share Tech Mono', monospace;
+}
+div[plain]{
+ box-sizing:border-box;
+ border-top:1px solid;
+ width:100vw;
+ height:100vh;
+ overflow-y:auto;
+}
+nav[plain] {
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 10;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav[plain] label{
+ display:block;
+ opacity:0.4;
+}
+nav[plain] label:hover{
+ cursor:pointer;
+ color:white;
+ opacity:1;
+}
+/*usage
+<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+<link href="https://codepen.io/gnjo/pen/rbVBvZ.css?v=4" rel="stylesheet" >
+<section plain>
+ <nav plain></nav>
+ <div plain name="Home">1</div>
+ <div plain name="List">2</div>
+ <div plain name="Edit">3</div>
+ <div plain name="Conf">4</div> 
+</section>
+<script src="https://codepen.io/gnjo/pen/rbVBvZ.js?v=5"></script>
+*/
