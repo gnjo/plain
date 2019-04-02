@@ -28,7 +28,7 @@ nav[plain] label{
 }
 nav[plain] label:hover{
  cursor:pointer;
- color:white;
+ /*color:white;*/
  opacity:1;
 }
 /*usage
