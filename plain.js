@@ -1,7 +1,8 @@
 ;(function(root){
 /*histroy
  v1 cut the treat
-*/ 
+ v2 circle dot
+*/
 'use strict';
 let fn={};
  fn.i=function(html){
@@ -15,7 +16,8 @@ let fn={};
  //
  fn.qa('div[plain]').map(d=>{
   let name=d.getAttribute('name')||''
-  ,el=fn.i(`<label>-${name}</label>`)
+  //,el=fn.i(`<label>-${name}</label>`)
+    ,el=fn.i(`<label v="${}"><span class="dot"></span></label>`)
   ;
   el.onclick=function(e){ fn.scv(d) }
   fn.q('nav[plain]').appendChild(el);
