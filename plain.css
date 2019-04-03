@@ -1,6 +1,7 @@
 /*history
  v1 lunched
  v2 circle dot
+ v3 cursol area optimize
 */
 section[plain],body{
  background-color:#222222;
@@ -31,6 +32,7 @@ nav[plain] {
     display: flex;
     flex-direction: column;
     transition: right 0.1s linear;
+    min-width: 2rem;/*v3 cursol area*/
 }
 
 nav[plain] label{
