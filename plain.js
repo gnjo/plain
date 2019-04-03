@@ -17,7 +17,7 @@ let fn={};
  fn.qa('div[plain]').map(d=>{
   let name=d.getAttribute('name')||''
   //,el=fn.i(`<label>-${name}</label>`)
-    ,el=fn.i(`<label v="${}"><span class="dot"></span></label>`)
+    ,el=fn.i(`<label v="${name}"><span class="dot"></span></label>`)
   ;
   el.onclick=function(e){ fn.scv(d) }
   fn.q('nav[plain]').appendChild(el);
