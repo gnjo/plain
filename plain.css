@@ -1,3 +1,7 @@
+/*history
+ v1 lunched
+ v2 circle dot
+*/
 section[plain],body{
  background-color:#222222;
  color:#009988;
@@ -12,13 +16,15 @@ div[plain]{
  height:100vh;
  overflow-y:auto;
 }
+/*
 nav[plain]:hover {
     right: 0.15rem;
-}
+}*/
 nav[plain] {
     position: fixed;
     top: 0.5rem;
-    right: -2.15rem;
+    /*right: -2.15rem;*/
+    left: 0.15rem;
     z-index: 10;
     justify-content: center;
     height: 100vh;
@@ -35,6 +41,35 @@ nav[plain] label:hover{
  /*color:white;*/
  opacity:1;
 }
+
+/*add circle dot*/
+.dot {
+  height: 8px;
+  width: 8px;
+  border:1px solid;
+  border-radius: 50%;
+  display: inline-block;
+  display:block;
+  margin-bottom:8px;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear; 
+}
+.dot:hover{background-color:#009988}
+
+nav[plain] label:hover>.dot{background-color:#009988}
+nav[plain] label.checked>.dot{background-color:#009988}
+nav[plain] label{
+ position:relative;
+ cursor:pointer;
+}
+nav[plain] label:hover:after{
+ position:absolute;
+ content:''attr(v)'';
+ font-size:8px;
+ top:-20px;
+ left:16px;
+}
+
 /*usage
 <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 <link href="https://codepen.io/gnjo/pen/rbVBvZ.css?v=4" rel="stylesheet" >
